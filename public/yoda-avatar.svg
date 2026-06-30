@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Avatar verde estilizado">
+  <circle cx="60" cy="60" r="58" fill="#23262f" stroke="#5fd068" stroke-width="2"/>
+  <ellipse cx="60" cy="70" rx="28" ry="26" fill="#5fd068"/>
+  <ellipse cx="38" cy="58" rx="9" ry="16" fill="#5fd068" transform="rotate(-25 38 58)"/>
+  <ellipse cx="82" cy="58" rx="9" ry="16" fill="#5fd068" transform="rotate(25 82 58)"/>
+  <circle cx="50" cy="68" r="4" fill="#0b1d0d"/>
+  <circle cx="70" cy="68" r="4" fill="#0b1d0d"/>
+  <path d="M48 84 Q60 92 72 84" stroke="#0b1d0d" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

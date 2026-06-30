@@ -1,0 +1,20 @@
+{
+  "name": "chat-con-yoda",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "POC: SPA para chatear con Yoda (Star Wars) usando IA (Gemini), con Vercel Functions como proxy seguro.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "vercel-dev": "vercel dev",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.1",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4"
+  }
+}

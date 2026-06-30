@@ -11,8 +11,8 @@ export function renderHome(container) {
         />
         <h1>Habla con Yoda</h1>
         <p class="hero-subtitle">
-          Una pequeña prueba de concepto de ComicSansCon: conversaciones con
-          personajes ficticios potenciadas por IA.
+          Conversaciones con
+          personaje ficticio potenciada por IA.
         </p>
         <a href="/chat" data-link class="btn btn-primary">Iniciar chat</a>
         <a href="/about" data-link class="btn btn-secondary">Acerca del proyecto</a>

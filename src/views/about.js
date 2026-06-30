@@ -6,11 +6,7 @@ export function renderAbout(container) {
       <article class="card">
         <h2>El personaje</h2>
         <p>
-          <strong>Yoda</strong> es un maestro Jedi de la franquicia
-          <em>Star Wars</em>, conocido por su sabiduría, su sintaxis
-          invertida y sus enseñanzas sobre la Fuerza. En esta POC, Yoda
-          responde con su estilo característico a cualquier pregunta que le
-          hagas.
+          <strong>Yoda</strong> Yoda es un legendario y poderoso Maestro Jedi en el universo de Star Wars. Reconocido por su baja estatura, piel verde, orejas puntiagudas y su peculiar forma de hablar, destaca como el Gran Maestro de la Orden Jedi, famoso por su inmensa sabiduría, su dominio de la Fuerza y sus habilidades de combate
         </p>
       </article>
 
@@ -26,7 +22,7 @@ export function renderAbout(container) {
         </p>
         <p>
           Las respuestas del personaje se generan a través de la API de
-          Claude (Anthropic), llamada de forma segura desde una función
+          Gemini, llamada de forma segura desde una función
           serverless de Vercel: la clave de API nunca se expone en el
           navegador.
         </p>

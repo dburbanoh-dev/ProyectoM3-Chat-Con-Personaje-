@@ -20,7 +20,7 @@ export function renderChat(container) {
       <div class="chat-window" id="chat-window" aria-live="polite">
         <div class="message message-assistant">
           <span class="message-author">Yoda</span>
-          <p>Hmm. Hablar contigo, quiero. Pregúntame algo, puedes.</p>
+          <p>Hola quieres preguntarme algo ?.</p>
         </div>
       </div>
 

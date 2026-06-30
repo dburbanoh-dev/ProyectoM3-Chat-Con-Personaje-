@@ -24,7 +24,6 @@ respuestas breves, y nunca rompe el personaje (no admite ser una IA).
 
 ## 2. Arquitectura (resumen)
 
-```
 chat-con-yoda/
 ├─ api/
 │  └─ chat.js          # Vercel Serverless Function: proxy seguro hacia Gemini
@@ -49,7 +48,6 @@ chat-con-yoda/
 ├─ vercel.json
 ├─ vite.config.js
 └─ package.json
-```
 
 **Flujo de una pregunta del usuario:**
 
@@ -69,11 +67,11 @@ como variable de entorno del lado del servidor (Vercel).
 
 ## 3. Requisitos
 
-- Node.js 18 o superior
-- Una cuenta de Vercel (gratuita) y la CLI de Vercel (`npm i -g vercel`)
-- Una API key de Gemini (Google AI Studio): https://aistudio.google.com/apikey
+Node.js 18 o superior
 
----
+Una cuenta de Vercel (gratuita) y la CLI de Vercel (`npm i -g vercel`)
+
+Una API key de Gemini (Google AI Studio): https://aistudio.google.com/apikey
 
 ## 4. Ejecutar en local
 
@@ -91,9 +89,7 @@ cp .env.example .env
 
 Edita `.env` y coloca tu clave real:
 
-```
 GEMINI_API_KEY=tu-clave-real-de-gemini
-```
 
 > `.env` está en `.gitignore`: nunca se sube al repositorio.
 
@@ -172,21 +168,15 @@ Al finalizar, la CLI imprime la URL pública del despliegue.
 
 ## 7. Capturas de pantalla
 
-> ⚠️ Pendiente: agrega aquí 3-4 capturas reales tomadas después de correr
-> `vercel dev` o de tu despliegue en producción (vista Home, vista Chat con
-> una conversación, y un estado de error/carga). Guárdalas en
-> `public/screenshots/` y enlázalas así:
->
-> ![Home](./public/screenshots/home.png)
-> ![Chat](./public/screenshots/chat.png)
-> ![Estado de carga/error](./public/screenshots/chat-error.png)
+> ![Home](./public/screenshots/chat%20inicio.jpg)
+> ![Chat](./public/screenshots/chat%20con%20yoda.jpg)
+> ![About](./public/screenshots/acerca%20de%20yoda.jpg)
 
 ---
 
 ## 8. Link a la aplicación desplegada
 
-> ⚠️ Pendiente: pega aquí la URL pública una vez completado el despliegue
-> (paso 6), por ejemplo: `https://chat-con-yoda.vercel.app`
+> ⚠️URL pública https://chat-con-yoda-2-c9dn644p0-dario-burbano-s-projects.vercel.app/
 
 ---
 

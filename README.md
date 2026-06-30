@@ -71,7 +71,7 @@ Node.js 18 o superior
 
 Una cuenta de Vercel (gratuita) y la CLI de Vercel (`npm i -g vercel`)
 
-Una API key de Gemini (Google AI Studio): https://aistudio.google.com/apikey
+Una API key de Gemini (Google AI Studio): [https://aistudio.google.com/apikey]
 
 ## 4. Ejecutar en local
 
@@ -146,9 +146,13 @@ npm run test:watch
 ### Opción A: desde la web
 
 1. Sube este repositorio a GitHub.
-2. En https://vercel.com → **Add New... → Project** → importa el repo.
+
+2. En [https://vercel.com] → **Add New... → Project** → importa el repo.
+
 3. En **Environment Variables**, agrega `GEMINI_API_KEY` con tu clave real.
+
 4. Vercel detecta automáticamente el `buildCommand` (`npm run build`) y el
+
    `outputDirectory` (`dist`) definidos en `vercel.json`. Despliega.
 5. Verifica la URL pública que te entrega Vercel y prueba el chat en
    producción.
@@ -176,7 +180,7 @@ Al finalizar, la CLI imprime la URL pública del despliegue.
 
 ## 8. Link a la aplicación desplegada
 
-> ⚠️URL pública https://chat-con-yoda-2-c9dn644p0-dario-burbano-s-projects.vercel.app/
+>⚠️URL pública: URL pública: [https://chat-con-yoda-2.vercel.app/]
 
 ---
 
@@ -187,7 +191,7 @@ IA (Claude) como herramienta de apoyo durante el desarrollo. Resumen
 honesto de para qué se usó y qué se decidió por criterio propio:
 
 | Tarea | Uso de IA | Decisión/criterio del desarrollador |
-|---|---|---|
+
 | Estructura del router con History API | Se pidió un esquema base de router sin librerías | Se revisó y simplificó la API pública (`registerRoute`, `navigate`, `matchRoute`) para que fuera fácil de testear de forma aislada |
 | Separación fetch / parseo / render | Sugerencia de IA sobre separar responsabilidades | Se aceptó porque coincide con el objetivo del PI de separar fetching, transformación y renderizado en funciones distintas |
 | System prompt de Yoda | Se iteró el prompt con IA probando varias versiones | Se ajustó manualmente para limitar la longitud de respuesta y evitar que el personaje "rompiera el personaje" |

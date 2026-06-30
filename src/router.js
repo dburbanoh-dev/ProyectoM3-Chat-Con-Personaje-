@@ -1,9 +1,3 @@
-/**
- * Router minimalista basado en History API.
- * No usa ninguna librería externa: registra rutas, decide cuál coincide
- * con la ubicación actual y delega el renderizado a la vista correspondiente.
- */
-
 const routes = [];
 
 /**

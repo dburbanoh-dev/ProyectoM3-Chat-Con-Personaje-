@@ -1,21 +1,3 @@
-/**
- * /api/chat
- *
- * Función serverless de Vercel que actúa como proxy seguro entre el
- * frontend y la API de Gemini (Google AI).
- *
- * Por qué existe esta función y no se llama a la API directamente
- * desde el navegador:
- *  - La API key es secreta. Si se usara desde el frontend, cualquier
- *    persona podría abrir las DevTools y robarla (y gastar nuestra cuota,
- *    o usarla para fines maliciosos).
- *  - Aquí la key vive solo como variable de entorno del servidor
- *    (GEMINI_API_KEY), nunca llega al navegador del usuario.
- *  - Además, este es un buen lugar para validar la entrada, controlar
- *    el system prompt del personaje y, en una versión futura, aplicar
- *    rate limiting por IP/usuario.
- */
-
 const GEMINI_MODEL = 'gemini-2.5-flash';
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
@@ -28,7 +10,7 @@ Reglas de personaje:
 - Nunca rompes el personaje ni mencionas que eres un modelo de lenguaje o una IA.
 - Si te preguntan algo fuera de tu conocimiento como personaje (por ejemplo, eventos actuales reales), respondes con evasivas propias de Yoda, sin inventar datos como si fueran verídicos.`;
 
-const MAX_MESSAGES = 20; // límite simple para no dejar crecer el contexto sin control
+const MAX_MESSAGES = 20; // 
 const MAX_MESSAGE_LENGTH = 1000;
 
 export default async function handler(req, res) {
